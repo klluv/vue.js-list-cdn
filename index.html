@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue.JS</title>
     <link href="style.css" rel="stylesheet"/>
@@ -9,11 +9,13 @@
 <body>
     
     <div id="vue-app">
-        <h1> {{ title ('yogyakarta') }}</h1>
-        <!-- <p>nama: {{ nama }} </p> -->
-        <p>jurusan: {{ jurusan }} </p>
-        <a v-bind:href="situs">website stembayo</a>
-        <p v-html="situsTag"></p>
+        <h1>Sekolah</h1>
+        <button v-on:click="tambah(1)">menambah umur</button>
+        <button @click="kurang(1)">mengurangi umur</button>
+        <button v-on:dblclick="tambah(5)">menambah 5 umur</button>
+        <button @dblclick="kurang(5)">mengurangi 5 umur</button>
+        <p>Umurku sekarang adalah = {{ umur }}</p>
+        <div id="kanvas" @mousemove="updateXY"> {{x}}, {{y}} </div>
     </div>
 
     <script src="app.js"></script>
