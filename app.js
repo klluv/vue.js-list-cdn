@@ -1,14 +1,20 @@
 new Vue ({
     el:'#vue-app',
     data: {
-        nama: 'kaka',
-        jurusan: 'sija',
-        situs: 'https://www.youtube.com',
-        situsTag: '<a href="www.google.com">situs google</a>'
+        umur: 18,
+        x: 0,
+        y: 0
     },
     methods: {
-        title: function(lokasi){
-            return 'ainosi ' + lokasi +' ' + this.nama;
+        tambah: function(plus) {
+            this.umur +=plus;
+        },
+        kurang: function(min) {
+            this.umur -=min;
+        },
+        updateXY: function(event) {
+            this.x = event.offsetX;
+            this.y = event.offsetY;
         }
     }
 });
