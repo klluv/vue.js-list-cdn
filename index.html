@@ -10,12 +10,14 @@
     
     <div id="vue-app">
         <h1>Sekolah</h1>
-        <button v-on:click="tambah(1)">menambah umur</button>
+        <button v-on:click.once="tambah(1)">menambah umur</button>
         <button @click="kurang(1)">mengurangi umur</button>
         <button v-on:dblclick="tambah(5)">menambah 5 umur</button>
         <button @dblclick="kurang(5)">mengurangi 5 umur</button>
         <p>Umurku sekarang adalah = {{ umur }}</p>
         <div id="kanvas" @mousemove="updateXY"> {{x}}, {{y}} </div>
+
+        <a @click.prevent="click" href="https://www.youtube.com">LINK YOUTUBE</a>
     </div>
 
     <script src="app.js"></script>
