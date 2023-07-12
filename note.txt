@@ -3,3 +3,12 @@ v-on: / @
 
 @mousemove
     digunakan untuk perintah data saat mouse bergerak
+
+v-on:click.once
+    hanya bisa seklai klik (tidak bisa2 atau lebih)
+
+v-on:click.prevent
+    agar link tidak menuju ke external website
+
+event modifier source:
+    https://vuejs.org/guide/essentials/event-handling.html#event-modifiers
