@@ -8,13 +8,15 @@
 </head>
 <body>
     
-    <div id="vue-app">
-        <h1> {{ title ('yogyakarta') }}</h1>
-        <!-- <p>nama: {{ nama }} </p> -->
-        <p>jurusan: {{ jurusan }} </p>
-        <a v-bind:href="situs">website stembayo</a>
-        <p v-html="situsTag"></p>
-    </div>
+   <div id="vue-app">
+    <h1>Conditionals</h1>
+
+    <button @click="error = !error">Toggle Error</button>
+    <button @click="success = !success">Toggle Success</button>
+   <!---- <p v-if="error">There is an error</p>
+    <p v-else-if="success">SUCCESs</p>-->
+
+   </div>
 
     <script src="app.js"></script>
 </body>
