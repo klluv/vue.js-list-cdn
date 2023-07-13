@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue.JS</title>
     <link href="style.css" rel="stylesheet"/>
@@ -8,13 +8,15 @@
 </head>
 <body>
     
-    <div id="vue-app">
-        <h1> {{ title ('yogyakarta') }}</h1>
-        <!-- <p>nama: {{ nama }} </p> -->
-        <p>jurusan: {{ jurusan }} </p>
-        <a v-bind:href="situs">website stembayo</a>
-        <p v-html="situsTag"></p>
-    </div>
+   <div id="vue-app">
+    <h1>Computed properties</h1>
+    <button @click="a++">tambah A</button>
+    <button @click="b++">tambah B</button>
+    <p> A = {{a}}</p>
+    <p>B = {{b}}</p>
+    <p>Age - A = {{ ageMinA }}</p>
+    <p>Age - B = {{ ageMinB }}</p>
+   </div>
 
     <script src="app.js"></script>
 </body>
