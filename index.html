@@ -8,13 +8,27 @@
 </head>
 <body>
     
-    <div id="vue-app">
-        <h1> {{ title ('yogyakarta') }}</h1>
-        <!-- <p>nama: {{ nama }} </p> -->
-        <p>jurusan: {{ jurusan }} </p>
-        <a v-bind:href="situs">website stembayo</a>
-        <p v-html="situsTag"></p>
-    </div>
+   <div id="vue-app">
+    <h1>Looping v-for</h1>
+    <ul>
+        <li v-for="(x,index) in toys"> {{ index }} {{ x }}</li>
+    </ul>
+
+    <ul>
+        <li v-for="(y, index) in karakter"> {{ index }} {{ y.nama }} - {{ y.umur }} </li>
+    </ul>
+
+    <template v-for="(y,index) in karakter">
+        <h3>{{ index }} {{ y.nama }}</h3>
+        <p>{{y.umur}}</p>
+    </template>
+
+        <template v-for="y in karakter">
+            <div v-for="(val,key) in karakter">
+                <p>{{key}} - {{val}}</p>
+            </div>
+        </template>
+   </div>
 
     <script src="app.js"></script>
 </body>
