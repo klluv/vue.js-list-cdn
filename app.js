@@ -1,14 +1,18 @@
 new Vue ({
     el:'#vue-app',
     data: {
-        nama: 'kaka',
-        jurusan: 'sija',
-        situs: 'https://www.youtube.com',
-        situsTag: '<a href="www.google.com">situs google</a>'
+        available: false,
+        nearby: false
     },
-    methods: {
-        title: function(lokasi){
-            return 'ainosi ' + lokasi +' ' + this.nama;
+   methods: {
+
+   },
+   computed: {
+    compClass: function() {
+        return {
+            available: this.available,
+            nearby:this.nearby
         }
     }
+   }
 });
