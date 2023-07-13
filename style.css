@@ -1,0 +1,29 @@
+#bottle {
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(img/bottle.png) center no-repeat;
+    background-size: 80%;
+}
+
+#bottle.burst{
+    background: url(/img/bottle-broken.png) center no-repeat;
+    background-size: 100%;
+}
+
+#bottle-health{
+    width: 200px;
+    border: 2px solid #000;
+    margin: 0 auto 20px auto;
+}
+
+#bottle-health div{
+    height: 20px;
+    background: red;
+
+}
+
+#game-control{
+    width: 120px;
+    margin: 0 auto;
+}
