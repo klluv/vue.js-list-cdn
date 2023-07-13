@@ -8,13 +8,24 @@
 </head>
 <body>
     
-    <div id="vue-app">
-        <h1> {{ title ('yogyakarta') }}</h1>
-        <!-- <p>nama: {{ nama }} </p> -->
-        <p>jurusan: {{ jurusan }} </p>
-        <a v-bind:href="situs">website stembayo</a>
-        <p v-html="situsTag"></p>
+   <div id="vue-app">
+    <!--bottle image-->
+    <div id="bottle" v-bind:class="{ burst: ended }"></div>
+
+    <!--bottle health-->
+    <div id="bottle-health">
+
+        <div v-bind:style="{ width: health +'%'}"></div>
+
     </div>
+
+    <!--gamecontrol-->
+    <div id="game-control">
+        <button @click="hit" v-show="!ended">HIT</button>
+        <button @click="restart">RESTART GAME</button>
+    </div>
+
+   </div>
 
     <script src="app.js"></script>
 </body>
