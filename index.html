@@ -8,13 +8,19 @@
 </head>
 <body>
     
-    <div id="vue-app">
-        <h1> {{ title ('yogyakarta') }}</h1>
-        <!-- <p>nama: {{ nama }} </p> -->
-        <p>jurusan: {{ jurusan }} </p>
-        <a v-bind:href="situs">website stembayo</a>
-        <p v-html="situsTag"></p>
-    </div>
+   <div id="vue-app">
+    <h1>Dynamic CSS</h1>
+    <h2>Example 1</h2>
+    <!--<div @click="available = !available" v-bind:class="{available : available}">
+        <span>KAKA</span>
+    </div>-->
+    <h2>Example 2</h2>
+    <button @click="nearby = !nearby">Toggle Nearby</button>
+    <button @click="available = !available">Toggle Available</button>
+    <div v-bind:class="compClass">
+        <span>KAKA</span>
+    </div>    
+   </div>
 
     <script src="app.js"></script>
 </body>
