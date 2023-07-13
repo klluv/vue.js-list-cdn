@@ -1,14 +1,15 @@
 new Vue ({
     el:'#vue-app',
     data: {
-        nama: 'kaka',
-        jurusan: 'sija',
-        situs: 'https://www.youtube.com',
-        situsTag: '<a href="www.google.com">situs google</a>'
+        nama: '',
+        umur:''
     },
     methods: {
-        title: function(lokasi){
-            return 'ainosi ' + lokasi +' ' + this.nama;
-        }
+       logName: function () {
+        console.log('nama terisi');
+       },
+       logAge: function () {
+        console.log('umur terisi');
+    }
     }
 });
