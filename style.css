@@ -1,0 +1,16 @@
+span {
+    background: blue;
+    display: inline-block;
+    padding: 10px;
+    color: #ffefef;
+    margin: 10px 0;
+}
+
+.available span {
+    background:blueviolet;
+}
+
+.nearby span:after {
+    content: "bertambah";
+    margin-left: 10px; 
+}
