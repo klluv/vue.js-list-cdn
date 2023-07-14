@@ -8,13 +8,18 @@
 </head>
 <body>
     
-    <div id="vue-app">
-        <h1> {{ title ('yogyakarta') }}</h1>
-        <!-- <p>nama: {{ nama }} </p> -->
-        <p>jurusan: {{ jurusan }} </p>
-        <a v-bind:href="situs">website stembayo</a>
-        <p v-html="situsTag"></p>
-    </div>
+   <h1>Multiple vue Instances</h1>
+   
+   <div id="vue-app-one">
+    <h2>{{title}}</h2>
+    <p>{{salam}}</p>
+    <button @click="gantiJudul">Ganti Judul</button>
+   </div>
+
+   <div id="vue-app-two">
+    <h2>{{title}}</h2>
+    <p>{{salam}}</p>
+   </div>
 
     <script src="app.js"></script>
 </body>
