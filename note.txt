@@ -1,25 +1,3 @@
-masukkan script vue.js
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
-
-masukkan script js file di <body></body>
-	<script src="app.js"></script>
-
-memanggil data 
-    <div id="vue-app">
-    el:'#vue-app',
-    data: {}
-    
-memanggil attribut dari js bisa menggunakan {{}}
-    <h1> {{ title ('yogyakarta') }}</h1>
-        <p>nama: {{ nama }} </p>
-        <p>jurusan: {{ jurusan }} </p>
-
-
-
-v-bind digunakan untuk mengikat atribut
-	<a v-bind:href="situs">website stembayo</a>
-	situs: 'https://www.youtube.com',
-
-directive yang digunakan untuk memasukkan HTML dari js
-	<p v-html="situsTag"></p>
-	situsTag: '<a href="www.google.com">situs google</a>'
+multiple vue instances
+	cara mmebuat dua vue atau lebih. yang dibedakan yaitu id vue. 
+	vue pertama bisa di dipanggil di vue kedua.
