@@ -1,7 +1,10 @@
-<template>
+</style><template>
+    <div>
+    <h1>test</h1>
     <ul>
         <li v-for="test in tests">{{ test }}</li>
     </ul>
+</div>
 </template>
 
 <script>
@@ -14,5 +17,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+h1{
+    color: aqua;
+}
 </style>
