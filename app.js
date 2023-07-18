@@ -1,14 +1,10 @@
-new Vue ({
-    el:'#vue-app',
-    data: {
-        nama: 'kaka',
-        jurusan: 'sija',
-        situs: 'https://www.youtube.com',
-        situsTag: '<a href="www.google.com">situs google</a>'
-    },
-    methods: {
-        title: function(lokasi){
-            return 'ainosi ' + lokasi +' ' + this.nama;
-        }
-    }
-});
+import Vue from 'vue'
+import App from './App.vue'
+//import Ninjas from './Ninjas.vue'
+
+//Vue.component('ninjas', Ninjas);
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
