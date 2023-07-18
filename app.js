@@ -1,14 +1,25 @@
-new Vue ({
-    el:'#vue-app',
-    data: {
-        nama: 'kaka',
-        jurusan: 'sija',
-        situs: 'https://www.youtube.com',
-        situsTag: '<a href="www.google.com">situs google</a>'
-    },
-    methods: {
-        title: function(lokasi){
-            return 'ainosi ' + lokasi +' ' + this.nama;
-        }
-    }
-});
+<template>
+  <div>
+      <h1>{{ title }}</h1>
+      <tests></tests>
+  </div>
+</template>
+
+<script>
+// Imports
+import Tests from './tests.vue';
+
+export default {
+  components: {
+      'tests': Tests
+  },
+  data () {
+      return {
+        title: 'Tests App'
+      }
+  }
+}
+</script>
+
+<style>
+</style>
