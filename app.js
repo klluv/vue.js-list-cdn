@@ -1,14 +1,13 @@
-new Vue ({
-    el:'#vue-app',
+new Vue({
+    el: '#vue-app',
     data: {
-        nama: 'kaka',
-        jurusan: 'sija',
-        situs: 'https://www.youtube.com',
-        situsTag: '<a href="www.google.com">situs google</a>'
+        output:'dog'
     },
     methods: {
-        title: function(lokasi){
-            return 'ainosi ' + lokasi +' ' + this.nama;
+        readRef: function(){
+            console.log(this.$refs.test.innerText);
+            this.output = this.$refs.input.value;
         }
     }
 });
+
